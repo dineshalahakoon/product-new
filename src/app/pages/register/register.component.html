@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6 d-flex justify-content-center">
+            <img src="../../../assets/summer-refreshing-beverages-photo.jpg" alt="">
+        </div>
+        <div class="col-6">
+
+            <div>
+                <label   for="txt-product-name"class="form-lable">Procuct Name</label>
+                <input id="txt-product-name" [(ngModel)]="product.name" class="form-control" type="text">
+            </div>
+
+            <div>
+                <label   for="txt-discription"class="form-lable">Description</label>
+                <input id="txt-discription"   [(ngModel)]="product.description" class="form-control" type="text">
+            </div>
+           
+          
+
+
+
+            <label class="form">Catagory</label>
+            <select class="form-control"  [(ngModel)]="product.catagary" >
+                <option [value]="'BUN'" >Bun</option>
+                <option [value]="'BEV'" >Beverage</option>
+
+            </select>
+            <div class="mt-3">
+                <label   for="txt-price"class="form-lable">Price</label>
+                <input id="txt-price"  [(ngModel)]="product.price" class="form-control" type="number">
+            </div>
+
+
+            <div class="mt-4">
+                <button (click)="saveproduct()"  class="btn btn-primary">Register</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
